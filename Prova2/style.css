@@ -1,0 +1,92 @@
+/* Basic reset to remove margin, padding, and box-sizing across all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+    line-height: 1.6; /* Spacing between lines for readability */
+    color: #333; /* Dark grey color for text */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px; /* Padding around the content */
+}
+
+h1 {
+    color: #0056b3; /* Dark blue for the main title */
+    margin-bottom: 20px; /* Space below the title */
+    padding-bottom: 10px; /* Space inside the bottom of the title */
+    border-bottom: 2px solid #0056b3; /* Blue line under the title */
+}
+
+p {
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+h2 {
+    color: #004085; /* Slightly darker blue for secondary titles */
+    margin-top: 20px; /* Space above secondary titles */
+    margin-bottom: 10px; /* Space below secondary titles */
+}
+
+h3 {
+    color: #343a40; /* Dark color for tertiary titles */
+    margin-top: 15px; /* Space above tertiary titles */
+    margin-bottom: 5px; /* Space below tertiary titles */
+}
+
+ul {
+    margin-left: 20px; /* Indent for unordered list */
+}
+
+li {
+    margin-bottom: 10px; /* Space below each list item */
+}
+
+ul ul {
+    margin-top: 5px; /* Top margin for nested lists */
+    margin-left: 20px; /* Indent for nested lists */
+}
+
+ul ul li {
+    font-size: 0.95em; /* Slightly smaller font size for nested list items */
+}
+
+.negrito {
+    font-weight: bold;
+    color: red
+}
+
+
+a:link, a:visited {
+    color: blue; /* Escolha a cor para os links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+#Prova_2 {
+    font-weight: bold;
+    color: black;
+}
+
+.botao-retorno {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+    width: 100%;
+}
+
+.botao-retorno:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+nav {
+    text-align: center; /* Centraliza o botão de retorno */
+    font-size: large;
+    margin-top: 20px; /* Espaço acima do botão */
+    margin-bottom: 20px;
+}

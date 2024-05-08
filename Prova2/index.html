@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Prova 2 - Linguagens de Programação</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Resumo Prova 2 - Linguagens de Programação</h1>
+    <nav>
+        <a href="javascript:history.back()" class="botao-retorno">Conteúdos</a>
+    </nav>
+    <p>
+        Resumo para a segunda prova de Linguagens de Programação - Abstração.
+    </p>
+    <h2>Abstração</h2>
+    <ul>
+        <li>Abstração é o processo de identificar as qualidades ou propriedades importantes do fenõmeno que está sendo modelado
+            <ul>
+                <li id="conceito">Na programação: faz referência à distinção entre O QUE uma parte do programa faz e COMO ela é implementada</li>
+                <li>Exemplo: as construções de uma LP são abstrações do código de máquina.</li>
+                <li>Importante para a construção de códigos grandes -> pode existir vários níveis de abstração, através da implementação de procedimentos.</li>
+            </ul>
+        </li>
+        <br>
+        <h3>Tipos de abstrações</h3>
+        <li>Abstração é uma entidade que incorpora uma computação</li>
+        <li id="abs_fun">Abstração de função:
+            <ul id="abs_fun">
+                <li>Incorpora uma expressão a ser avaliada e, quando chamada, produz um valor como resultado</li>
+                <li>Visão do usuário: Chamada de função -> mapear os argumentos a um resultado</li>
+                <li>Visão do programador: Chamada de função -> avaliar o corpo da função, tendo os parâmetros formais amarrados aos argumentos correspondentes</li>
+            </ul>
+        </li>
+        <li id="abs_proc">Abstração de procedimento:
+            <ul id="abs_proc">
+                <li>Incorpora um comando a ser executado e, quando chamado, irá atualizar o valor de variáveis</li>
+                <li>Visão do usuário: Chamada de procedimento -> atualizar variáveis, de uma maneira que será influenciada por seus argumentos</li>
+                <li>Visão do programador: Chama de procedimento -> executar o corpo do procedimento, tendo os parâmetros formais amarrados aos argumentos correspondentes</li>
+            </ul>
+        </li>
+        <li id="prin_abs">Princípio da Abstração
+            <ul id="prin_abs">
+                <li>Possível criar abstrações para qualquer tipo de estrutura de código, desde que essa estrutura realize algum tipo de processamento ou cálculo.</li>
+                <li>Ajuda a identificar formas de tornar a linguagem mais expressiva e mais regular</li>
+            </ul>
+        </li>
+        <br>
+        <h3>Parâmetros</h3>
+        <li id="pa_form">Parâmetro formal: identificador utilizado dentro de uma função para denotar um argumento</li>
+        <li id="pa_real">Parâmetro real: uma expressão que produz argumento</li>
+        <li id="arg">Argumento: um valor que pode ser passado para uma abstração -> específico de cada LP</li>
+        <br>
+        <img src="im1.png" alt="im1">
+        <br>
+        <br>
+
+        <li>Mecanismo de passagem de parâmetro: método de associação entre parãmetros formais e reais
+            <ul>
+                <li id="mec_copia">Mecanismos de cópia
+                    <ul id="mec_copia">
+                        <li>Permite que valores sejam copiados para dentro ou para fora de uma abstração</li>
+                        <li>Parâmetros formais denotam variáveis locais</li>
+                        <li>Passagem de valor: ENTRADA -> varíavel X é criada e recebe como valor inicial o valor do argumento</li>
+                        <li>Passagem de resultado: Argumento deverá ser uma variável. ENTRADA -> variável X é criada, sem valor inicial; SAIDA -> valor final de X é atribuido ao argumento</li>
+                        <li>Passagem de valor resultado: Combinação dos dois acima</li>
+                    </ul>
+                </li>
+                <li id="mec_def">Mecanismos de definição
+                    <ul id="mec_def">
+                        <li>Permite que um parâmetro formal X seja amarrado diretamente ao argumento</li>
+                        <li>Parâmetro constante: argumento é um valor; X é amarrado ao valor do argumento durante a ativação da abstração</li>
+                        <li>Parâmetro variável: argumento é uma referência a uma varíavel; qualquer utilização de X é uma utilização indireta ao argumento</li>
+                        <li>Parâmetro procedimental: argumento é uma abstração de procedimento; qualuqer chamada a X é, na verdade, uma chamada indireta do argumento(procedimento)</li>
+                        <li>Parâmetro funcional: argumento é uma abstração de função; qualquer chamada a X é, na verdade, uma chamada indireta ao argumento(função)</li>
+                    </ul>
+                </li>
+                <li>Mecanismos de definição X Mecanismos de cópia
+                    <ul>
+                        <li>MD -> semantica mais simples; mais eficiente;</li>
+                    </ul>
+                </li>
+                <li id="prin_corr">Princípio da Correspondência
+                    <ul id="prin_corr">
+                        <li>Possível correspondência entre alguns mecanismos de passagem de parâmetro e alguns tipos de declarações
+                            <ul>
+                                <li>Declaração -> especifica o identificador e a entidade a qual será amarrada</li>
+                                <li>Especificação de parâmetro formal especifica somente identificador e o argumento vem de alguma outra parte do programa</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <br>
+        <h3>Ordem de avaliação</h3>
+        <li> Quando uma abstração é chamada, em que momento cada parâmetro é avaliado?
+            <ul>
+                <li id="ava_prev">Avaliação prévia -> no ponto da chamada; apenas uma vez e o seu valor substitui cada ocorrência do parâmetro formal</li>
+                <li id="ava_norm">Avaliação de ordem normal -> no momento em que o argumento for realmente utilizado; parâmetro formal é substituído pelo real</li>
+            </ul>
+        </li>
+        <li id="strict">Função strict: chamada à função só pode ser avaliada se todos os seus argumentos puderem ser avaliados</li>
+        <li id="nonstrict">Função nonstrict: chamada à função puder ser avaliada, mesmo que n-ésimo argumento não possa ser avaliado</li>
+        
+        <!-- Add more topics as needed -->
+    </ul>
+    <br>
+    <br>
+    <h2>O que lembrar?</h2>
+    <ul>
+        <li><a href="#conceito" onclick="aplicarNegrito('conceito')">Conceito Abstração</li>
+        <li></a>Tipos de abstração
+            <ul>
+                <li><a href="#abs_fun" onclick="aplicarNegrito('abs_fun')">Abstração de função</li>
+                <li><a href="#abs_proc" onclick="aplicarNegrito('abs_proc')">Abstração de procedimento</li>
+            </ul>
+        </li>
+        <li><a href="#prin_abs" onclick="aplicarNegrito('prin_abs')">Princípio da Abstração</li>
+        <li></a>Parâmetros
+            <ul>
+                <li><a href="#pa_form" onclick="aplicarNegrito('pa_form')">Parâmetro formal</li>
+                <li><a href="#pa_real" onclick="aplicarNegrito('pa_real')">Parâmetro real</li>
+                <li><a href="#arg" onclick="aplicarNegrito('arg')">Argumento</li>
+                <li></a>Mecanismo de passagem de parâmetro
+                    <ul>
+                        <li><a href="#mec_copia" onclick="aplicarNegrito('mec_copia')">Mecanismos de cópia</li>
+                        <li><a href="#mec_def" onclick="aplicarNegrito('mec_def')">Mecanismos de definição</li>
+                        <li><a href="#prin_corr" onclick="aplicarNegrito('prin_corr')">Princípio da correspondência</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li></a>Ordem de avaliação
+            <ul>
+                <li><a href="#ava_prev" onclick="aplicarNegrito('ava_prev')">Avaliação prévia</li>
+                <li><a href="#ava_norm" onclick="aplicarNegrito('ava_norm')">Avaliação Normal</li>
+                <li><a href="#strict" onclick="aplicarNegrito('strict')">Função strict</li>
+                <li><a href="#nonstrict" onclick="aplicarNegrito('nonstrict')">Função nonstrict</li>
+            </ul>
+        </li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>

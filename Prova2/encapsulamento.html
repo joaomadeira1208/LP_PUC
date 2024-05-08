@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Prova 2 - Linguagens de Programação</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Resumo Prova 2 - Linguagens de Programação</h1>
+    <nav>
+        <a href="javascript:history.back()" class="botao-retorno">Conteúdos</a>
+    </nav>
+    <p>
+        Resumo para a segunda prova de Linguagens de Programação - Encapsulamento.
+    </p>
+    <h2>Encapsulamento</h2>
+    <ul>
+        <li>Sistemas de programação de grande porte são constituídos de módulos</li>
+        <li id="mod">Módulo -> qualquer unidade de programa que possua um nome e que possa ser implementada como uma entidade independente</li>
+        <li>Módulo bem projetado tem um único objetivo e possui uma interface pequena com outros módulos -> REÚTILIZAVEL</li>
+        <li id="encaps_mod">Módulo encapsula seus componentes (tipos, constantes, variáveis, procedimentos, funções)
+            <ul>
+                <li id="comp_ex">Componentes exportáveis -> componentes que são visíveis externamente ao módulo</li>
+                <li id="comp_oc">Componentes ocultos -> componentes que são usados somente para auxiliar a implementação dos componentes exportáveis</li>
+            </ul>
+        </li>
+        <li>Chave para modularidade -> abstração</li>
+
+        <h3>Pacotes</h2>
+        <li id="pac_simp">Pacotes Simples
+            <ul>
+                <li>Um pacote é especificado através de uma lista de informações declarativas (qualquer denotável: tipos, constantes, variáveis, procedimentos, funções e outros pacotes)</li>
+                <li>Pode ser visto como um conjunto encapsulado de amarrações</li>
+            </ul>
+        </li>
+        <li id="oc_inf">Ocultamento de informação
+            <ul>
+                <li>Um pacote contém declarações de componentes exportáveis e escondidos. A distinção em Ada, é feita através da divisão de um pacote em duas partes:
+                    <ul>
+                        <li>Declaração do pacote - declara somente os componentes exportáveis</li>
+                        <li>Corpo do pacote - contém declarações de todos os componentes escondidos, além dos corpos de procedimentos e funções exportáveis</li>
+                    </ul>
+                </li>
+                <li>Declaração do pacote contém somente as informações necessária ao usuário para que ele possa utilizar o pacote</li>
+            </ul>
+        </li>
+
+    </ul>
+    <br>
+    <br>
+    <h2>O que lembrar?</h2>
+    <ul>
+        <li><a href="#mod" onclick="aplicarNegrito('mod')">Conceito Módulo</li>
+        <li><a href="#encaps_mod" onclick="aplicarNegrito('encaps_mod')">Encapsulamento
+            <ul>
+                <li><a href="#comp_ex" onclick="aplicarNegrito('comp_ex')">Componentes Exportáveis</li>
+                <li><a href="#comp_oc" onclick="aplicarNegrito('comp_oc')">Componentes Ocultos (Escondidos)</li>
+            </ul>
+        </li>
+        <li></a>Pacotes
+            <ul>
+                <li><a href="#pac_simp" onclick="aplicarNegrito('pac_simp')">Pacotes Simples</li>
+                <li><a href="#oc_inf" onclick="aplicarNegrito('oc_inf')">Ocultamento de informação</li>
+            </ul>
+        </li>
+        
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
